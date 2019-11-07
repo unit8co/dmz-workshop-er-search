@@ -1,2 +1,11 @@
 # dmz-workshop-er-search
+
 Slides and notebooks presented at the 2019 DMZ conference in Stuttgart
+
+## Entity Resolution
+
+Identifying if two records in a data management system represent the same physical person or company may sound like a trivial thing. The reality is that banks often don’t know that the same client opened two accounts in two different branches or if the client is on a sanction list. Insurance companies don’t know how many clients they actually have. Retailers are struggling to detect fraudulent clients because they keep changing their names. This is where Entity Resolution (ER) systems step in. Entity Resolution is the task of disambiguating manifestations of real world entities in various records or mentions by linking and grouping. In this session we will cover typical scenarios where ER is useful. We will dive into simple and more advanced algorithms and solutions used in this field including Locality Sensitive Hashing (LSH) and Random Forest. We will also talk about how to efficiently model the entity. We will visualize some interesting examples of entity clusters and talk about how to deal with error cases.
+
+## Building domain-specific search engines
+
+Next, we will cover building domain specific search engines using Elasticsearch. Being able to search efficiently and quickly, be it on the web or through a company asset or product is a fundamental tool of the digital age. When applied to a specific context (e.g. inside a company), SQL Server’s full-text search and general purpose engines do not always produce the most relevant results and they can sometimes feel imperfect and unreliable. Modern search engines come with many functionalities (full-text, faceted, fuzzy search, …) that can be tuned to provide the most relevant results for each use-case. During this session, we will explore many aspects of a search engine like Elasticsearch (TF-IDF, Word Tokenizer, Fuzzyness, …) and how one can use these functionalities to make their search results more relevant using their domain knowledge. Finally, we will discuss many practical considerations such as: preparing your data and schema, how one can assess ranking results and discuss some security aspects.
